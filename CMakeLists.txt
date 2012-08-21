@@ -42,12 +42,12 @@ include ( AddTest28 )
 
 option ( ENABLE_OPENSSL "Enable use of OpenSSL" ON )
 option ( ENABLE_TAR "Enable tar building" ON )
-option ( ENABLE_TAR_SHARED "Enable dynamic build of tar" OFF )
+option ( ENABLE_TAR_SHARED "Enable dynamic build of tar" ON )
 option ( ENABLE_CPIO "Enable cpio building" ON )
-option ( ENABLE_CPIO_SHARED "Enable dynamic build of cpio" OFF )
+option ( ENABLE_CPIO_SHARED "Enable dynamic build of cpio" ON )
 option ( ENABLE_XATTR "Enable extended attribute support" ON )
 option ( ENABLE_ACL "Enable ACL support" ON )
-option ( ENABLE_TEST "Enable unit and regression tests" ON )
+option ( ENABLE_TEST "Enable unit and regression tests" OFF )
 
 if ( ENABLE_TEST )
   enable_testing ( )
@@ -719,7 +719,7 @@ endif ( MSVC )
 # aggressive about diagnosing build problems; this can get
 # relaxed somewhat in final shipping versions.
 if ( "CMAKE_C_COMPILER_ID" MATCHES "^GNU$" )
-  add_definitions ( -Wall -Werror )
+#  add_definitions ( -Wall -Werror )
 endif ( "CMAKE_C_COMPILER_ID" MATCHES "^GNU$" )
 
 if ( ENABLE_TEST )

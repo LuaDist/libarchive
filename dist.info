@@ -11,9 +11,9 @@ maintainer = "Peter Kapec"
 
 depends = {
   "zlib", -- optional
-  "bzip2" -- optional
+  "bzip2", -- optional
+  "openssl", -- optional
   -- "lzma" -- optional
   -- "lzmadec" -- optional
-  -- "openssl" -- optional
   -- "crypto" -- optional
 }
