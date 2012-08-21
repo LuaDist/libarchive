@@ -3,6 +3,7 @@
 name = "libarchive"
 version = "2.8.3"
 
+author = "Tim Kientzle"
 desc = "Libarchive is a reusable C library for reading and writing a variety of streaming archive formats."
 license = "New BSD License"
 url = "http://code.google.com/p/libarchive/"
